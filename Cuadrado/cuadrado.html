@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Posicionamiento de Imágenes</title>
+        <style>
+            .contenedor {
+                position: relative;
+                width: 700px; /* Ancho del contenedor */
+                height: 700px; /* Alto del contenedor */
+                margin: 20px auto   ; /* Margen superior e inferior de 50px y centrado horizontalmente */
+                border: 2px solid black; /* Borde del contenedor */
+            }
+            .imagen{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                border: 5px solid black;
+            }
+            .imagen:nth-child(1){
+                top: 50px;
+                left: 50px;
+            }
+            .imagen:nth-child(2){
+                top: 150px;
+                left: 150px;
+            }
+            .imagen:nth-child(3){
+                top: 250px;
+                left: 250px;
+            }
+            .imagen:nth-child(4){
+                top: 350px;
+                left: 350px;
+            }
+            .imagen:nth-child(5){
+                top: 450px;
+                left: 450px;
+            }
+            .imagen:hover{
+                border-color: skyblue;
+            }   
+            .imagen:hover ~ .imagen {
+                display: none;
+              }
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <img src="cuadradoAmarillo.jpg" alt="Imagen cuadrado amarillo" class="imagen">
+            <img src="cuadradoAzul.jpg" alt="Imagen cuadrado azul" class="imagen">
+            <img src="cuadradoRojo.jpg" alt="Imagen cuadrado rojo" class="imagen">
+            <img src="cuadradoVerde.jpg" alt="Imagen cuadrado verde" class="imagen">
+            <img src="cuadruadoRosa.jpg" alt="Imagen cuadrado rosa" class="imagen">
+        </div>    
+
+    </body>        
+</html>
