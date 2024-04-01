@@ -1,0 +1,80 @@
+.container {
+    width: 50%; /* Ancho del contenedor */
+    margin: 5px auto; /* Centrar el contenedor horizontalmente */
+    border: 2px solid black; /* Borde negro de 2px */
+    padding: 20px; /* Espacio de relleno dentro del contenedor */
+}
+
+/* Estilos adicionales para la tabla (opcional) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid black; /* Borde inferior de 2px en las celdas del encabezado */
+    padding: 8px;
+    text-align: center;
+}
+
+th:first-child{
+    text-align: left;
+}
+/* Estilos para las celdas de la tabla */
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+tr{
+    text-align: center;
+}
+
+td img{
+    height: 1em;
+    vertical-align: middle;
+}
+
+td:not(:first-child):not(:last-child) {
+    border-left: none;
+    border-right: none;
+}
+
+td:first-child {
+    border-left: 1px solid black;
+    border-right: 0px;
+    text-align: left;
+}
+
+/* Agregar solo borde derecho a la última columna */
+td:last-child {
+    border-right: 1px solid black;
+    border-left: 0px;
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+}
+
+tr:nth-child(-n+9) td.primeraColumna {
+    padding-left: 15px; /* Ajustar el padding izquierdo */
+}
+body{
+    font-family: 'Sequel Sans Display Medium', sans-serif;
+    font-weight: bold;
+}
+
+thead tr {
+    font-size: 0.8em; /* Reducir el tamaño de la fuente */
+    color: darkgrey; /* Cambiar el color del texto a un negro más claro */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
